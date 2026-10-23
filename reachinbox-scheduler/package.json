@@ -1,0 +1,25 @@
+{
+  "name": "reachinbox-scheduler",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ReachInbox Full-Stack Email Scheduler with BullMQ, Redis, PostgreSQL, Prisma, Nodemailer, Ethereal, Elasticsearch, Google & Slack OAuth",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:worker": "npm run worker --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev": "concurrently -n \"API,WORKER,CLIENT\" -c \"blue,yellow,green\" \"npm run dev:backend\" \"npm run dev:worker\" \"npm run dev:frontend\"",
+    "build": "npm run build --workspace=backend && npm run build --workspace=frontend",
+    "typecheck": "npm run typecheck --workspace=backend && npm run typecheck --workspace=frontend",
+    "test": "npm run test --workspace=backend",
+    "prisma:generate": "npm run prisma:generate --workspace=backend",
+    "prisma:migrate": "npm run prisma:migrate --workspace=backend",
+    "clear": "npm run clear --workspace=backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

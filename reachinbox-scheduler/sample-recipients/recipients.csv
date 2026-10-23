@@ -1,0 +1,8 @@
+email,name,company
+alex.turner@example.com,Alex Turner,Apex Growth
+sarah.connor@example.com,Sarah Connor,Cyberdyne
+jordan.belfort@example.com,Jordan Belfort,Stratton
+elena.rostova@example.com,Elena Rostova,Novikov Tech
+alex.turner@example.com,Alex Turner Duplicate,Apex Growth
+invalid-recipient-without-at.com,Broken Entry,Unknown
+marcus.vance@example.com,Marcus Vance,Vance Global

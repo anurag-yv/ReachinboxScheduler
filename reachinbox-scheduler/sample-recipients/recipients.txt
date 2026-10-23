@@ -1,0 +1,6 @@
+david.beckham@example.com
+victoria.adams@example.com
+not-an-email-address
+david.beckham@example.com
+leo.messi@example.com
+cristiano.ronaldo@example.com
